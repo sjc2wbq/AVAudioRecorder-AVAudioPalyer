@@ -57,7 +57,6 @@
     if (self.recorder.isRecording) {//录音中
         //停止录音
         [self.recorder stop];
-        self.recorder = nil;
         //开始转换格式
         NSString *amrPath = [GMRecorderTool GetPathByFileName:self.fileName ofType:@"amr"];
 #warning wav转amr
